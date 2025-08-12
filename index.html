@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Safety Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+</head>
+<body>
+    <header>
+        <h1>Community Safety Map</h1>
+    </header>
+
+    <div id="controls">
+        <input type="text" id="start" placeholder="Start location" />
+        <input type="text" id="end" placeholder="End location" />
+        <button id="routeBtn">Find Safe Route</button>
+        <input type="text" id="search" placeholder="Search location" />
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="report">
+        <h2>Report an Incident</h2>
+        <input type="text" id="incidentTitle" placeholder="Incident title" />
+        <select id="incidentType">
+            <option value="crime">Crime</option>
+            <option value="hazard">Hazard</option>
+            <option value="alert">Alert</option>
+        </select>
+        <button id="reportBtn">Report Incident at Map Center</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

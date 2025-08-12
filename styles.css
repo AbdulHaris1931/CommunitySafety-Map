@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f8f8;
+}
+
+header {
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+
+#controls input, #controls button, #report input, #report select, #report button {
+    padding: 5px;
+    font-size: 14px;
+}
+
+#map {
+    height: 500px;
+}
+
+#report {
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
